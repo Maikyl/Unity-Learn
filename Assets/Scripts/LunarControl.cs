@@ -25,16 +25,7 @@ public class LunarControl : MonoBehaviour
     
     void Update()
     {
-        _rotationObject.transform.rotation = Quaternion.Euler(xAxis += plus, yAxis += 0.1f, zAxis);
-
-        if (xAxis >= 17.8f)
-        {
-            plus *= -1;
-        }
-        
-        if (xAxis <= -72.2f)
-        {
-            plus *= -1;
-        }
+        _moonObject.transform.localPosition = new Vector3(0, Mathf.Sin(Time.time * 2) * 25, 100);
+        _rotationObject.transform.Rotate(new Vector3(0, 1, 0));
     }
 }

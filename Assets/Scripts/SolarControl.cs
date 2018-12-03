@@ -34,30 +34,24 @@ public class SolarControl : MonoBehaviour
 
     void Update()
     {
-        if (xAxis >= 17.9f)
-        {
-            plus = plus * -1;
-        }
+        //if (xAxis >= 17.9f)
+        //    plus *= -1;
 
-        if (xAxis <= -72.1f)
-        {
-            plus = plus * -1;
-        }
+        //if (xAxis <= -72.1f)
+        //    plus *= -1;
 
-        _lightObject.transform.rotation = Quaternion.Euler(xAxis += plus, yAxis += 0.1f, zAxis);
+        //_lightObject.transform.rotation = Quaternion.Euler(xAxis += plus, yAxis += 0.1f, zAxis);
 
-        if (xAxis2 >= 17.9f)
-        {
-            plus2 *= -1;
-        }
+        //if (xAxis2 >= 17.9f)
+        //    plus2 *= -1;
 
-        if (xAxis2 <= -72.1)
-        {
-            plus2 *= -1;
-        }
+        //if (xAxis2 <= -72.1)
+        //    plus2 *= -1;
 
-        _lightObject2.transform.rotation = Quaternion.Euler(xAxis2 += plus2, yAxis2 += 0.1f, zAxis2);
+        //_lightObject2.transform.rotation = Quaternion.Euler(xAxis2 += plus2, yAxis2 += 0.1f, zAxis2);
 
-        Debug.Log(xAxis2);
+        //Debug.Log(xAxis2);
+
+
     }
 }
